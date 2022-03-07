@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "web" {
 }
 
 # upload file to bucket
-resource "aws_s3_object" "web-files"  {
+resource "aws_s3_object" "web_files"  {
 
   # iterates based on number of objects
   for_each = fileset( "/Users/christochi/Documents/tochi-webfiles/", "**" )
