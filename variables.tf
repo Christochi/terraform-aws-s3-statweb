@@ -16,12 +16,16 @@ variable "bucket-name" {
   type = string
   description = "name of bucket"
 
+  default = "tochi-static-web-bucket"
+
 }
 
 variable "object-path" {
 
   type = string
   description = "location of file contents"
+
+  default = ""
 
 }
 
