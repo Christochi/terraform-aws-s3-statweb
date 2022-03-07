@@ -29,4 +29,14 @@ variable "object-path" {
 
 }
 
+variable "dir-path" {
+
+  type = string
+  description = "location of file contents"
+
+  default = ""
+
+}
+
+
 
