@@ -32,7 +32,7 @@ variable "object-path" {
 variable "dir-path" {
 
   type = string
-  description = "location of file contents"
+  description = "directory housing the files"
 
   default = ""
 
