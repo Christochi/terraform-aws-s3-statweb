@@ -46,7 +46,7 @@ data "aws_iam_policy_document" "bucket_policy" {
 
     principals {
       type        = "*"
-    #   identifiers = ["123456789012"]
+      identifiers = ["*"]
     }
 
     actions = [ "s3:GetObject" ]
