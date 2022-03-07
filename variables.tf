@@ -16,7 +16,7 @@ variable "bucket-name" {
   type = string
   description = "name of bucket"
 
-  default = "tochi-static-web-bucket"
+  default = ""
 
 }
 
