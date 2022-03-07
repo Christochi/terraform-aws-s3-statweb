@@ -10,3 +10,19 @@ variable "bucket-tag" {
   }
 
 }
+
+variable "bucket-name" {
+
+  type = string
+  description = "name of bucket"
+
+}
+
+variable "object-path" {
+
+  type = string
+  description = "location of file contents"
+
+}
+
+
