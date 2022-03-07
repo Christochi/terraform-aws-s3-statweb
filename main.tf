@@ -11,6 +11,14 @@ resource "aws_s3_bucket" "web" {
 
 }
 
+resource "aws_s3_bucket_public_access_block" "example" {
+
+  bucket = aws_s3_bucket.web.id # bucket's name
+
+  block_public_policy = true
+
+}
+
 # upload file to bucket
 resource "aws_s3_object" "web-files"  {
 
@@ -29,3 +37,5 @@ resource "aws_s3_object" "web-files"  {
   etag = filemd5("/Users/christochi/Documents/tochi-webfiles/${each.value}")
   
 }
+
+
