@@ -13,7 +13,7 @@ variable "bucket-tag" {
 
 variable "bucket-name" {
 
-  type = string
+  type        = string
   description = "name of bucket"
 
   default = ""
@@ -22,7 +22,7 @@ variable "bucket-name" {
 
 variable "object-path" {
 
-  type = string
+  type        = string
   description = "location of file contents"
 
   default = ""
@@ -31,7 +31,7 @@ variable "object-path" {
 
 variable "dir-path" {
 
-  type = string
+  type        = string
   description = "directory housing the files"
 
   default = ""

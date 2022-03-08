@@ -1,3 +1,4 @@
+# attaches a policy to an S3 bucket resource
 resource "aws_s3_bucket_policy" "website_hosting" {
 
   bucket = aws_s3_bucket.web.id # bucket's name
@@ -19,9 +20,9 @@ data "aws_iam_policy_document" "bucket_policy" {
       identifiers = ["*"]
     }
 
-    actions = [ "s3:GetObject" ] # action to allow
+    actions = ["s3:GetObject"] # action to allow
 
     # ARN of the bucket will be of format arn:aws:s3:::bucketname
-    resources = [ "${aws_s3_bucket.web.arn}/*" ]
+    resources = ["${aws_s3_bucket.web.arn}/*"]
   }
 }
