@@ -1,5 +1,5 @@
 # attaches a policy to an S3 bucket resource
-resource "aws_s3_bucket_policy" "website_hosting" {
+resource "aws_s3_bucket_policy" "attach_policy" {
 
   bucket = aws_s3_bucket.web.id # bucket's name
 
