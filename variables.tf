@@ -37,6 +37,3 @@ variable "dir-path" {
   default = ""
 
 }
-
-
-
