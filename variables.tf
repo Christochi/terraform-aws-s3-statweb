@@ -16,7 +16,7 @@ variable "bucket-name" {
   type        = string
   description = "name of bucket"
 
-  default = "tochi-static-web-bucket"
+  default = ""
 
 }
 
@@ -25,7 +25,7 @@ variable "object-path" {
   type        = string
   description = "location of file contents"
 
-  default = "/Users/christochi/Documents/sample-files/"
+  default = ""
 
 }
 
@@ -34,6 +34,6 @@ variable "dir-path" {
   type        = string
   description = "directory housing the files"
 
-  default = "/Users/christochi/Documents/sample-files"
+  default = ""
 
 }
