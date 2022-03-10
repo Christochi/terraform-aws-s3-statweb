@@ -20,9 +20,11 @@ data "aws_iam_policy_document" "bucket_policy" {
       identifiers = ["*"]
     }
 
-    actions = ["s3:GetObject" ] # action to allow
+    actions = ["s3:GetObject", ] # action to allow
 
     # ARN of the bucket will be of format arn:aws:s3:::bucketname
-    resources = ["${aws_s3_bucket.web.arn}/*" ]
+    resources = ["${aws_s3_bucket.web.arn}/*", ]
+
   }
+  
 }
