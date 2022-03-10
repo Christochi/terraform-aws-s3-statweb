@@ -28,6 +28,6 @@ resource "aws_s3_object" "web_files" {
   # etag = "${md5(file("path/to/file"))}"
   etag = filemd5("${var.dir-path}/${each.value}")
 
-  content_type = "applicaton/html"
+  content_type = "text/html"
 
 }
