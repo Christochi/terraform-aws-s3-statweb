@@ -1,3 +1,11 @@
+resource "aws_s3_bucket_acl" "acl" {
+
+  bucket = aws_s3_bucket.web.id
+
+  acl = "public-read"
+  
+}
+
 # attaches a policy to an S3 bucket resource
 resource "aws_s3_bucket_policy" "attach_policy" {
 
