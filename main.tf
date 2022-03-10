@@ -15,6 +15,7 @@ resource "aws_s3_bucket" "web" {
 resource "aws_s3_object" "web_files" {
 
   # iterates based on number of objects
+  # ** - matches any sequence of characters, including separator characters
   for_each = fileset("${var.object-path}", "**")
 
   bucket = aws_s3_bucket.web.id # bucket's name
